@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.327b00db.css",
-    "main.js": "/static/js/main.b3fbd77f.js",
+    "main.css": "/static/css/main.e4c3f478.css",
+    "main.js": "/static/js/main.216effe6.js",
     "static/js/787.9750ae9a.chunk.js": "/static/js/787.9750ae9a.chunk.js",
     "static/media/Snacks & Candy.png": "/static/media/Snacks & Candy.160d505ce318fccbe33f.png",
     "static/media/Frozen Foods.png": "/static/media/Frozen Foods.f72080f171b1cad9405a.png",
@@ -11,12 +11,12 @@
     "static/media/Bread & Bakery.png": "/static/media/Bread & Bakery.730f13fd8166e068b7f2.png",
     "static/media/Pantry.png": "/static/media/Pantry.832e6c72815f8e06af77.png",
     "index.html": "/index.html",
-    "main.327b00db.css.map": "/static/css/main.327b00db.css.map",
-    "main.b3fbd77f.js.map": "/static/js/main.b3fbd77f.js.map",
+    "main.e4c3f478.css.map": "/static/css/main.e4c3f478.css.map",
+    "main.216effe6.js.map": "/static/js/main.216effe6.js.map",
     "787.9750ae9a.chunk.js.map": "/static/js/787.9750ae9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.327b00db.css",
-    "static/js/main.b3fbd77f.js"
+    "static/css/main.e4c3f478.css",
+    "static/js/main.216effe6.js"
   ]
 }
