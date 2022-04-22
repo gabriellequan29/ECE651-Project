@@ -206,8 +206,8 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Celery settings
-# CELERY_BROKER_URL = 'rediss://:p6adb31f65c8a2492c411f2e2ee227a9ecb62d6a2c6d7d8ff48748aaf70f10278@ec2-3-217-109-26.compute-1.amazonaws.com:23010'
-CELERY_BROKER_URL = os.environ.get('REDIS_TLS_URL')
+CELERY_BROKER_URL = 'rediss://:p6adb31f65c8a2492c411f2e2ee227a9ecb62d6a2c6d7d8ff48748aaf70f10278@ec2-3-217-109-26.compute-1.amazonaws.com:23010'
+# CELERY_BROKER_URL = os.environ.get('REDIS_TLS_URL')
 
 # CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
