@@ -1,3 +1,4 @@
+import os
 from celery import shared_task
 from .models import *
 from selenium import webdriver
@@ -19,9 +20,15 @@ def my_test(self):
 
         for key in url_class_dict.keys():
             options = webdriver.ChromeOptions()
+            options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
+            options.add_argument('--headless')
             options.add_argument("--enable-javascript")
-            driver = webdriver.Chrome('D:/Waterloo/Winter 22/ECE 651/ECE651-Project/backend/product/chromedriver.exe',
-                                      options=options)
+            options.add_argument('--disable-gpu')
+            options.add_argument('--no-sandbox')
+            # driver = webdriver.Chrome('D:/Waterloo/Winter 22/ECE 651/ECE651-Project/backend/product/chromedriver.exe',
+            #                           options=options)
+
+            driver = webdriver.Chrome(executable_path=str(os.environ.get('CHROMEDRIVER_PATH')), chrome_options=options)
             driver.get(key)
             time.sleep(5)
             html = driver.page_source
